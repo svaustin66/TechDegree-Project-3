@@ -4,3 +4,194 @@
   font-size: 16px;
 }
 
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  color: #46698b;
+  text-align: center;
+}
+
+.intro {
+  padding: 0 20px;
+}
+
+form {
+  margin: 10px 0 0;
+  padding: 10px 20px;
+  background: #f7f0ea;
+  text-align: left;
+}
+
+header, footer {
+  background-color: #2d3945;
+  padding: 20px 5px;
+}
+
+h2, legend {
+  font-size: 1.8rem;
+}
+
+h3 {
+  font-size: 1.4rem;
+}
+
+h1, h2, h3, legend, button {
+  font-family: 'Merriweather', serif;
+  color: #2d3945;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: 2.2rem;
+  color: #fff;
+}
+
+.double-line {
+  border-top: 5px solid #2d3945;
+  height: 10px;
+}
+
+.double-line, .single-line {
+  border-bottom: 2px solid #2d3945;
+}
+
+.single-line {
+  margin-bottom: 30px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="datetime"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+textarea,
+select {
+  border: none;
+  border-radius: 5px;
+  height: auto;
+  margin: 0;
+  outline: 0;
+  padding: 20px 15px;
+  width: 100%;
+  background-color: #fff;
+  color: #000;
+  box-shadow: none;
+  margin-bottom: 30px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin: 0 4px 8px 0;
+}
+
+::-webkit-input-placeholder { 
+  color: #999;
+}
+#name::-webkit-input-placeholder, #mail::-webkit-input-placeholder { 
+  text-align:right;
+  font-style: italic; 
+}
+
+#name:-moz-placeholder, #mail:-moz-placeholder { 
+  text-align:right; 
+  font-style: italic;
+}
+
+button {
+  padding: 20px;
+  color: #FFF;
+  background-color: #4ebbb5;
+  text-align: center;
+  font-style: normal;
+  border-radius: 5px;
+  width: 100%;
+  margin-bottom: 10px;
+  border: none;
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+  margin: 0; 
+}
+
+legend {
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.checkbox, .radio {
+  display: inline-block;
+}
+
+#zip {
+  width: 50%;
+}
+
+input:focus, select:focus, textarea:focus {
+  border: 2px solid #46698b;
+  background-color: #ECF0F3;
+  transition: border .5s, background-color 2s;
+}
+
+input:focus-within, button:focus-within {
+  outline: 2px solid #46698b;
+  transition: .5s;
+}
+
+.has-margin-top {
+  margin-top: 30px;
+}
+
+footer p {
+  color: #aaa;
+  font-style: italic;
+}
+
+@media screen and (min-width: 768px) {
+
+  .intro, form {
+    max-width: 600px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .intro {
+    padding: 0;
+  }
+
+  form {
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+
+  .contact label {
+    display: inline-block;
+  }
+
+  .contact input, .contact select {
+    width: 69%;
+  }
+  .contact label {
+    width: 29%;
+  }
+  .zip { 
+    width: 30%;
+  }
+
+}
